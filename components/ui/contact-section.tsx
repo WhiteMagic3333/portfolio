@@ -10,7 +10,7 @@ import { Toaster } from '@/components/ui/toaster'
 export default function ContactSection() {
   const { toast } = useToast()
   const [copied, setCopied] = useState(false)
-  const email = 'Shivam.work@gmail.com'
+  const email = 'shivambohracse@gmail.com'
 
   const copyToClipboard = async () => {
     try {
@@ -80,7 +80,7 @@ export default function ContactSection() {
 
           <div className="w-2 h-2 rounded-full bg-rose-500" />
 
-          <a href="https://github.com/strangely-true" target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-rose-600 transition duration-300 ease-out border-2 border-rose-500 rounded-full shadow-md group">
+          <a href="https://github.com/whitemagic3333" target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-rose-600 transition duration-300 ease-out border-2 border-rose-500 rounded-full shadow-md group">
             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#2b3137] group-hover:translate-x-0 ease">
               <Github className="w-5 h-5" />
             </span>
@@ -90,7 +90,7 @@ export default function ContactSection() {
 
           <div className="w-2 h-2 rounded-full bg-rose-500" />
 
-          <a href="https://www.instagram.com/strangely_true" target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-rose-600 transition duration-300 ease-out border-2 border-rose-500 rounded-full shadow-md group">
+          <a href="https://www.instagram.com/wm_3333" target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-rose-600 transition duration-300 ease-out border-2 border-rose-500 rounded-full shadow-md group">
             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 group-hover:translate-x-0 ease">
               <Instagram className="w-5 h-5" />
             </span>
@@ -126,8 +126,8 @@ export default function ContactSection() {
       >
         <p>©2025 Shivam Bohra</p>
         <div className="flex items-center space-x-2">
-          <span className="w-2 h-2 rounded-full bg-red-500" />
-          <span>Unavailable for a full-time position</span>
+          <span className="w-2 h-2 rounded-full bg-green-500" />
+          <span>Available for a full-time position</span>
         </div>
         <p>Made by Shivam.</p>
       </motion.div>

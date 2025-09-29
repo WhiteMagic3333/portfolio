@@ -637,7 +637,7 @@ const FoolsJourneyPost = () => {
             through my email. I&apos;m always open to suggestions and
             discussions.
           </p>
-          <p>- Shivam.work@gmail.com</p>
+          <p>- shivambohracse@gmail.com</p>
         </section>
       </div>
     </BlogPostLayout>
