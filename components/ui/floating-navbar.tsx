@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import Image from 'next/image'
-import { IconHome, IconUser, IconMessage, IconBriefcase } from '@tabler/icons-react'
+import { IconHome, IconUser, IconMessage, IconBriefcase, IconTimeline } from '@tabler/icons-react'
 import { useLenis } from 'lenis/react'
 
 const navItems = [
@@ -23,6 +23,11 @@ const navItems = [
     name: 'Projects',
     link: '#projects',
     icon: <IconBriefcase className="h-4 w-4" />,
+  },
+  {
+    name: 'Experience',
+    link: '#experience',
+    icon: <IconTimeline className="h-4 w-4" />,
   },
   {
     name: 'Contact',

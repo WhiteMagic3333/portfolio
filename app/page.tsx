@@ -8,6 +8,7 @@ import { ScrollRevealText } from "@/components/ScrollRevealText"
 import { ProjectSection } from "@/components/ProjectSection"
 import ContactSection from "@/components/ui/contact-section"
 import HeroSection from "@/components/ui/hero-section"
+import { ExperienceSection } from "@/components/ui/experience-section"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -46,6 +47,11 @@ export default function Home() {
         <section id="projects">
         <ProjectSection />
         </section>
+        
+        <section id="experience">
+        <ExperienceSection />
+        </section>
+        
         <section id="contact">
         <ContactSection />
         </section>
