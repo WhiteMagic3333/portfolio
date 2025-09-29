@@ -59,43 +59,45 @@ const StarField = ({ count = 100 }) => {
 
 const Constellation = () => {
    const points = [
-    // Letter 'S'
-    { x: 40, y: 30 },   // Start of S top curve
-    { x: 60, y: 20 },   // Top curve peak
-    { x: 80, y: 30 },   // S mid-top
-    { x: 60, y: 50 },   // S center dip
-    { x: 40, y: 60 },   // S mid-bottom
-    { x: 60, y: 70 },   // Bottom curve peak
-    { x: 80, y: 60 },   // End of S bottom curve
+    // Outer star points (5-pointed star)
+    { x: 160, y: 10 },  // Top point
+    { x: 190, y: 70 },  // Top right point
+    { x: 250, y: 70 },  // Bottom right point
+    { x: 205, y: 110 }, // Bottom right inner
+    { x: 220, y: 170 }, // Bottom point
+    { x: 160, y: 140 }, // Bottom center
+    { x: 100, y: 170 }, // Bottom left
+    { x: 115, y: 110 }, // Bottom left inner
+    { x: 70, y: 70 },   // Top left point
+    { x: 130, y: 70 },  // Top left inner
     
-    // Letter 'B'
-    { x: 110, y: 20 },  // B top vertical
-    { x: 110, y: 80 },  // B bottom vertical
-    { x: 140, y: 20 },  // B top curve start
-    { x: 160, y: 35 },  // B top curve peak
-    { x: 140, y: 50 },  // B mid connection
-    { x: 160, y: 65 },  // B bottom curve peak
-    { x: 140, y: 80 },  // B bottom curve end
-    { x: 110, y: 50 },  // B middle connection
+    // Inner star points (connecting to center)
+    { x: 160, y: 90 },  // Center point
   ]
 
   return (
-    <svg className="absolute inset-0 w-full h-full" viewBox="0 0 220 100">
-      {points.slice(0, -1).map((point, i) => (
+    <svg className="absolute inset-0 w-full h-full" viewBox="0 0 320 180">
+      {/* Star outline connections */}
+      {[
+        // Outer star perimeter
+        [0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7], [7, 8], [8, 9], [9, 0],
+        // Inner star connections to center
+        [0, 10], [2, 10], [4, 10], [6, 10], [8, 10]
+      ].map(([startIdx, endIdx], i) => (
         <motion.line
           key={i}
-          x1={point.x}
-          y1={point.y}
-          x2={points[i + 1].x}
-          y2={points[i + 1].y}
+          x1={points[startIdx].x}
+          y1={points[startIdx].y}
+          x2={points[endIdx].x}
+          y2={points[endIdx].y}
           stroke="white"
-          strokeWidth="0.2"
-          strokeOpacity="0.3"
+          strokeWidth="0.3"
+          strokeOpacity="0.4"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
           transition={{ 
-            duration: 1.2, 
-            delay: 1.2 + i * 0.1,
+            duration: 1.5, 
+            delay: 1.2 + i * 0.08,
             ease: "circOut"
           }}
         />
@@ -105,14 +107,14 @@ const Constellation = () => {
           key={i}
           cx={point.x}
           cy={point.y}
-          r={1.2}
+          r={i === 10 ? 2.5 : 1.5} // Center point is larger
           fill="white"
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: i === 10 ? 1 : 0.8 }}
           transition={{ 
             type: "spring",
             stiffness: 150,
-            delay: 1 + i * 0.15,
+            delay: 1 + i * 0.1,
           }}
         />
       ))}
