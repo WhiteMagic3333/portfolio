@@ -224,26 +224,6 @@ export function ExperienceSection() {
               </motion.div>
             ))}
           </div>
-
-          {/* Bottom CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            className="text-center mt-16"
-          >
-            <p className="text-gray-400 text-lg mb-6">
-              Interested in working together?
-            </p>
-            <motion.a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-rose-500 to-purple-600 text-white font-semibold rounded-full hover:from-rose-600 hover:to-purple-700 transition-all duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Get In Touch
-            </motion.a>
-          </motion.div>
         </div>
       </div>
     </div>
