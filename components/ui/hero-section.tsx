@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
                         <Reveal>
                             <div className="flex items-center gap-6">
                              
-                                <a href="/resume.pdf" className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-rose-600 rounded-xl group">
+                                <a href="https://drive.google.com/drive/folders/1x4-2LF-Y1Bx8cTmCT7pHbL7Ujz3Sz4wE?usp=sharing" className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-rose-600 rounded-xl group" target="_blank">
                                     <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-rose-700 rounded group-hover:-mr-4 group-hover:-mt-4">
                                         <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
                                     </span>
