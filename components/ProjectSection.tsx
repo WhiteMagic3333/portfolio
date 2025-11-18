@@ -17,6 +17,22 @@ interface Project {
 const projects: Project[] = [
   { 
     id: '1', 
+    name: 'Open Polls', 
+    color: '#4A90E2', // Blue color
+    image: '/open-polls.png',
+    link: 'https://github.com/raghavendrashekhawat2/Open-Polls',
+    description: 'Designed and deployed a Flask-based platform supporting 2 poll types (public and private), enabling secure user registration, boosting user participation and engagement. Secured user authentication with SMS verification via Twilio API, using a 4-digit OTP. Enabled poll owners to sort participants by 4 distinct criteria, improving data organization and analysis efficiency. Implemented Google Visualizations to display poll results with 3 different charts, enhancing data clarity and user interaction.'
+  },
+  { 
+    id: '2', 
+    name: 'Car Rental Website', 
+    color: '#7B68EE', // Medium slate blue color
+    image: '/car-rental.png',
+    link: 'https://github.com/strangely-true/CarRental',
+    description: 'Built a scalable online platform using PHP and MySQL for renting cars and listing vehicles. Enabled rental agencies to efficiently manage car listings, facilitating easy booking for users.'
+  },
+  { 
+    id: '3', 
     name: 'TruthScope', 
     color: '#A23B5A', // Dark pastel red color
     image: '/truthscope.png',
@@ -24,7 +40,7 @@ const projects: Project[] = [
     description: 'A chrome extension that detects fake news and misinformation using AI. It uses sentiment analysis and LLMs to analyze the content and provide a credibility score. Built with JS, Gemini SDK, Manifest V3.'
   },
   { 
-    id: '2', 
+    id: '4', 
     name: 'Coordina', 
     color: '#321353', // Dark purple color
     image: '/coordina.png',
@@ -32,7 +48,7 @@ const projects: Project[] = [
     description: 'A Smart India Hackathon project focusing on user-friendly dashboard interfaces for government departments. Developed using Next.js, React.js, and MongoDB.'
   },
   { 
-    id: '3', 
+    id: '5', 
     name: 'Github Diary', 
     color: '#014D4E', // Blue 
     image: '/github-diary.png',
@@ -40,7 +56,7 @@ const projects: Project[] = [
     description: 'Never lose track of your coding progress. Git Diary automatically records your development activity in a private GitHub repository, creating a detailed, timestamped journal of your work.'
   },
   { 
-    id: '4', 
+    id: '6', 
     name: 'MealMetric', 
     color: '#06402B', 
     image: '/mealmetric.png',
@@ -48,7 +64,7 @@ const projects: Project[] = [
     description: 'A dynamic web application to calculate nutritional information for meals based on user-inputted ingredients. Built with Node.js, Express.js, PostgreSQL, and EJS.'
   },
   { 
-    id: '5', 
+    id: '7', 
     name: 'Real-Time Chat Application', 
     color: '#085548', 
     image: '/chat-app.png',
