@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                Based in Dehradun, India
+                                Lives in Dehradun, India
                             </motion.p>
                         </Reveal>
 

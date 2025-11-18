@@ -49,7 +49,7 @@ export function CounterSection() {
       <div className="absolute inset-0" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <AnimatedCounter value={2047} title="Leetcode Rating (Knight)" suffix="" />
+          <AnimatedCounter value={2054} title="Leetcode Rating (Knight)" suffix="" />
           <AnimatedCounter value={100 + 389 + 793 + 60 + 119} suffix="+" title="Total Problems Solved (Leetcode, Codeforces, CSES etc)" />
           <AnimatedCounter value={1039} title="Github Contributions" suffix="+" />
         </div>
