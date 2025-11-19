@@ -59,7 +59,7 @@ const experiences: Experience[] = [
 ]
 
 export function ExperienceSection() {
-  const [hoveredExperience, setHoveredExperience] = useState<string | null>(null)
+  const [, setHoveredExperience] = useState<string | null>(null)
 
   const getTypeColor = (type: Experience['type']) => {
     switch (type) {
