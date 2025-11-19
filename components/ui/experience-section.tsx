@@ -37,7 +37,7 @@ const experiences: Experience[] = [
       'Developed responsive and high-speed landing pages for campaigns to promote offers and attract approximately 5,000 new users per campaign',
       'Led code reviews for 400+ pull requests on GitHub, offering constructive feedback and helping to maintain high code quality standards'
     ],
-    technologies: ['React', 'Node.js', 'Redis', 'PostgreSQL', 'JavaScript', 'HTML/CSS', 'GitHub'],
+    technologies: ['Python','Flask','Docker','React', 'PHP', 'Redis', 'MySQL', 'JavaScript', 'GitHub'],
     link: 'https://internshala.com'
   },
   {
