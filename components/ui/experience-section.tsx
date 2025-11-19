@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Calendar, MapPin, Building2, Briefcase, Award, ExternalLink } from 'lucide-react'
 
-interface Experience { //testing
+interface Experience {
   id: string
   title: string
   company: string
