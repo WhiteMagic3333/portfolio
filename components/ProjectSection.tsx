@@ -28,49 +28,9 @@ const projects: Project[] = [
     name: 'Car Rental Website', 
     color: '#7B68EE', // Medium slate blue color
     image: '/car-rental.png',
-    link: 'https://github.com/strangely-true/CarRental',
+    link: 'https://github.com/WhiteMagic3333/Car-Rental-Agency-Online',
     description: 'Built a scalable online platform using PHP and MySQL for renting cars and listing vehicles. Enabled rental agencies to efficiently manage car listings, facilitating easy booking for users.'
   },
-  { 
-    id: '3', 
-    name: 'TruthScope', 
-    color: '#A23B5A', // Dark pastel red color
-    image: '/truthscope.png',
-    link: 'https://github.com/sujayx07/TruthScope',
-    description: 'A chrome extension that detects fake news and misinformation using AI. It uses sentiment analysis and LLMs to analyze the content and provide a credibility score. Built with JS, Gemini SDK, Manifest V3.'
-  },
-  { 
-    id: '4', 
-    name: 'Coordina', 
-    color: '#321353', // Dark purple color
-    image: '/coordina.png',
-    link: 'https://coordina-murex.vercel.app/',
-    description: 'A Smart India Hackathon project focusing on user-friendly dashboard interfaces for government departments. Developed using Next.js, React.js, and MongoDB.'
-  },
-  { 
-    id: '5', 
-    name: 'Github Diary', 
-    color: '#014D4E', // Blue 
-    image: '/github-diary.png',
-    link: 'https://marketplace.visualstudio.com/items?itemName=strangely-true.github-diary',
-    description: 'Never lose track of your coding progress. Git Diary automatically records your development activity in a private GitHub repository, creating a detailed, timestamped journal of your work.'
-  },
-  { 
-    id: '6', 
-    name: 'MealMetric', 
-    color: '#06402B', 
-    image: '/mealmetric.png',
-    link: 'https://github.com/strangely-true/MealMetric',
-    description: 'A dynamic web application to calculate nutritional information for meals based on user-inputted ingredients. Built with Node.js, Express.js, PostgreSQL, and EJS.'
-  },
-  { 
-    id: '7', 
-    name: 'Real-Time Chat Application', 
-    color: '#085548', 
-    image: '/chat-app.png',
-    link: 'https://github.com/strangely-true/Chat-app',
-    description: 'A full-stack real-time chat application with type-safe messaging and user authentication. Built using Next.js, React.js, Convex DB, and Clerk.'
-  }
 ]
 
 export function ProjectSection() {
